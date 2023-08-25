@@ -1,0 +1,1 @@
+{"version":3,"file":"YoutubeError.js","sourceRoot":"","sources":["../../../../src/domain/youtube/errors/YoutubeError.ts"],"names":[],"mappings":";;;AAAA,qDAA8C;AAO9C,MAAa,YAAa,SAAQ,kBAAQ;IACxC,YAAY,aAA4B;QACtC,MAAM,EAAE,OAAO,EAAE,IAAI,EAAE,GAAG,aAAa,CAAC;QACxC,KAAK,CAAC,OAAO,EAAE,IAAI,CAAC,CAAC;QACrB,IAAI,CAAC,IAAI,GAAG,eAAe,CAAC;IAC9B,CAAC;CACF;AAND,oCAMC"}

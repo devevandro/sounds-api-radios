@@ -1,0 +1,1 @@
+{"version":3,"file":"DeletePlaylistSharedSpy.js","sourceRoot":"","sources":["../../../../../../src/tests/provider/spys/youtube/mongo/DeletePlaylistSharedSpy.ts"],"names":[],"mappings":";;;AAKA,MAAa,uBAAuB;IAGlC,KAAK,CAAC,oBAAoB,CAAC,EAAE,MAAM,EAAE,UAAU,EAAU;QACvD,IAAI,CAAC,MAAM,GAAG;YACZ,MAAM;YACN,UAAU;SACX,CAAC;QACF,OAAO,CAAC,CAAC;IACX,CAAC;CACF;AAVD,0DAUC"}

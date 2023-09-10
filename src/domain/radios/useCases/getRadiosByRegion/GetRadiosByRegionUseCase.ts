@@ -1,5 +1,5 @@
 import IUseCase from '../../../../core/IUseCase';
-import { IGetRadiosByRegionData } from '../../data/IGetRadiosByRegion';
+import { IGetRadiosByRegionData } from '../../data/IGetRadiosByRegionData';
 import { RadioEntity } from '../../entities/RadioEntity';
 
 export type RequestDTO = {

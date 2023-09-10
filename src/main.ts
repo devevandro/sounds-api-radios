@@ -10,6 +10,7 @@ import { connectToDataBase } from './providers/mongo/connections';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
 
   if (ENVIRONMENTS.NODE_ENV !== 'test') {
     const config = new DocumentBuilder()

@@ -16,6 +16,7 @@ import { RegionsController } from './getRegions/controllers/RegionsController';
 import { GetRegionsFactory } from '../../factories/radios/getRegions/GetRegionsFactory';
 import { GetRegionByIdFactory } from '../../factories/radios/getRegionById/GetRegionByIdFactory';
 import { RegionByIdController } from './getRegionById/controllers/RegionByIdController';
+import { GetRadiosByStateFactory } from '../../factories/radios/GetRadiosByStateFactory';
 
 @Module({
   controllers: [
@@ -27,6 +28,7 @@ import { RegionByIdController } from './getRegionById/controllers/RegionByIdCont
   ],
   providers: [
     GetRadiosByRegionFactory,
+    GetRadiosByStateFactory,
     radiosRegionProvider,
     GetRegionByIdFactory,
     regionProvider,

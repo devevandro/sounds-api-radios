@@ -16,27 +16,41 @@ exports.RadiosRegionsController = void 0;
 const common_1 = require("@nestjs/common");
 const swagger_1 = require("@nestjs/swagger");
 const GetRadiosByRegionFactory_1 = require("../../../../factories/radios/getRadioByRegion/GetRadiosByRegionFactory");
+const GetRadiosByStateFactory_1 = require("../../../../factories/radios/GetRadiosByStateFactory");
 let RadiosRegionsController = class RadiosRegionsController {
-    constructor(getRadiosRegionFactory) {
+    constructor(getRadiosRegionFactory, getRadiosStateFactory) {
         this.getRadiosRegionFactory = getRadiosRegionFactory;
+        this.getRadiosStateFactory = getRadiosStateFactory;
     }
     async getRadiosByRegion(regionId) {
         const response = await this.getRadiosRegionFactory.execute({ regionId });
         return response;
     }
+    async getRadiosByState(stateId) {
+        const response = await this.getRadiosStateFactory.execute({ stateId });
+        return response;
+    }
 };
 __decorate([
-    (0, common_1.Get)('/:regionId'),
+    (0, common_1.Get)('region/:regionId'),
     (0, swagger_1.ApiOperation)({ summary: 'Get Radios By Region' }),
     __param(0, (0, common_1.Param)('regionId')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], RadiosRegionsController.prototype, "getRadiosByRegion", null);
+__decorate([
+    (0, common_1.Get)('state/:stateId'),
+    __param(0, (0, common_1.Param)('stateId')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], RadiosRegionsController.prototype, "getRadiosByState", null);
 RadiosRegionsController = __decorate([
     (0, swagger_1.ApiTags)('Radios'),
-    (0, common_1.Controller)('radio-region'),
-    __metadata("design:paramtypes", [GetRadiosByRegionFactory_1.GetRadiosByRegionFactory])
+    (0, common_1.Controller)('radio'),
+    __metadata("design:paramtypes", [GetRadiosByRegionFactory_1.GetRadiosByRegionFactory,
+        GetRadiosByStateFactory_1.GetRadiosByStateFactory])
 ], RadiosRegionsController);
 exports.RadiosRegionsController = RadiosRegionsController;
 //# sourceMappingURL=RadiosRegionController.js.map

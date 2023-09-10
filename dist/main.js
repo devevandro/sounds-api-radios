@@ -10,6 +10,7 @@ const ENVIRONMENTS_1 = require("./constants/ENVIRONMENTS");
 const connections_1 = require("./providers/mongo/connections");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(AppModule_1.AppModule);
+    app.enableCors();
     if (ENVIRONMENTS_1.ENVIRONMENTS.NODE_ENV !== 'test') {
         const config = new swagger_1.DocumentBuilder()
             .setTitle('Nestjs Template Documentation')

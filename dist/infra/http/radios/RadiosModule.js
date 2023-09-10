@@ -19,6 +19,7 @@ const RegionsController_1 = require("./getRegions/controllers/RegionsController"
 const GetRegionsFactory_1 = require("../../factories/radios/getRegions/GetRegionsFactory");
 const GetRegionByIdFactory_1 = require("../../factories/radios/getRegionById/GetRegionByIdFactory");
 const RegionByIdController_1 = require("./getRegionById/controllers/RegionByIdController");
+const GetRadiosByStateFactory_1 = require("../../factories/radios/GetRadiosByStateFactory");
 let RadioModule = class RadioModule {
 };
 RadioModule = __decorate([
@@ -32,6 +33,7 @@ RadioModule = __decorate([
         ],
         providers: [
             GetRadiosByRegionFactory_1.GetRadiosByRegionFactory,
+            GetRadiosByStateFactory_1.GetRadiosByStateFactory,
             injections_1.radiosRegionProvider,
             GetRegionByIdFactory_1.GetRegionByIdFactory,
             injections_1.regionProvider,

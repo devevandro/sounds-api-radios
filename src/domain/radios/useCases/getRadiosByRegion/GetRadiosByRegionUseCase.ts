@@ -1,12 +1,10 @@
 import IUseCase from '../../../../core/IUseCase';
-import { IGetRadiosByRegionData } from '../../data/IGetRadiosByRegionData';
+import { IGetRadiosByRegionData, Result, Params } from '../../data/IGetRadiosByRegionData';
 import { RadioEntity } from '../../entities/RadioEntity';
 
-export type RequestDTO = {
-  regionId: string;
-};
+export type RequestDTO = Params;
 
-export type ResponseDTO = Array<RadioEntity>;
+export type ResponseDTO = Result;
 
 export class GetRadiosByRegionUseCase
   implements IUseCase<RequestDTO, ResponseDTO>

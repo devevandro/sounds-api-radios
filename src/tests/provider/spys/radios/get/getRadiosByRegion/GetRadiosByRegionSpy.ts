@@ -3,7 +3,7 @@ import {
   Params,
   Result,
   IGetRadiosByRegionData,
-} from '../../../../../../domain/radios/data/IGetRadiosByRegion';
+} from '../../../../../../domain/radios/data/IGetRadiosByRegionData';
 
 export class GetRadiosByRegionSpy implements IGetRadiosByRegionData {
   params: Params;

@@ -29,6 +29,8 @@ jobs:
       - name: Build project
         run: yarn build
 
+      - uses: actions/checkout@v2.3.4 
+
       - name: Call Deploy - CD
         id: local-action
         uses: ./.github/workflows/cd.yml

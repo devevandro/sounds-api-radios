@@ -1,11 +1,9 @@
 name: Node.js CI
 
 on:
-  pull_request:
+  push:
     branches:
       - master
-
-  workflow_dispatch:
 
 jobs:
   build:
@@ -28,3 +26,4 @@ jobs:
 
       - name: Build project
         run: yarn build
+

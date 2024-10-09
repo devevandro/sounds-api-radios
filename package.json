@@ -19,7 +19,8 @@
     "test:e2e": "NODE_ENV=test vitest --watch -c vitest.config.e2e.js",
     "test:unit": "vitest --watch --coverage",
     "test:ci": "vitest run --coverage",
-    "test:staged": "vitest run"
+    "test:staged": "vitest run",
+    "infisical:dev": "infisical run start:dev --env=stage"
   },
   "dependencies": {
     "@nestjs/bull": "^0.6.3",

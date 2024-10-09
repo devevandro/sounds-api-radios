@@ -7,4 +7,5 @@ export type RadioEntity = {
   img: string;
   region: string;
   isFavorite: boolean;
+  prefix: string;
 };

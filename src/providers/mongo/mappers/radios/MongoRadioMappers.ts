@@ -12,6 +12,7 @@ export class MongoRadioMappers {
       city: radio.city,
       isFavorite: radio.isFavorite,
       url: radio.url,
+      prefix: radio.prefix,
     };
   }
 }

@@ -9,6 +9,7 @@ export type IRadioSchema = {
   img: string;
   region: string;
   isFavorite: boolean;
+  prefix: string;
 };
 
 const radioSchema = new Schema(
@@ -39,6 +40,10 @@ const radioSchema = new Schema(
     },
     isFavorite: {
       type: Boolean,
+      required: true,
+    },
+    prefix: {
+      type: String,
       required: true,
     },
   },

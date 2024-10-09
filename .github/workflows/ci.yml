@@ -28,8 +28,8 @@ jobs:
 
       - name: Build project
         run: yarn build
-    
-  call-workflow:
-    uses: ./github/workflows/cd.yml
+
+      - name: Call Deploy - CD
+        uses: ./.github/workflows/cd.yml
 
 

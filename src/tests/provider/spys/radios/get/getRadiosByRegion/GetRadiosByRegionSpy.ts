@@ -17,6 +17,7 @@ export class GetRadiosByRegionSpy implements IGetRadiosByRegionData {
       region: faker.datatype.string(),
       state: faker.datatype.string(),
       url: faker.datatype.string(),
+      prefix: faker.datatype.string(),
     },
   ];
 

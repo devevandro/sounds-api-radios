@@ -55,6 +55,7 @@ export class MongoRadioRepository
           img: 1,
           region: '$region.name',
           isFavorite: 1,
+          prefix: 1,
         },
       },
     ]);
@@ -108,6 +109,7 @@ export class MongoRadioRepository
           img: 1,
           region: '$region.name',
           isFavorite: 1,
+          prefix: 1,
         },
       },
     ]);

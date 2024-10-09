@@ -32,6 +32,11 @@ jobs:
         run: yarn build
 
       - name: Call Deploy - CD
+        id: local-action
         uses: ./.github/workflows/cd.yml
+        with:
+          name: "World"
+      - name: Local Action Output
+        run: echo "${{ steps.local-action.outputs.random }}"
 
 

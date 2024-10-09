@@ -3,7 +3,7 @@ name: Continuous Integration - CI
 on:
   push:
     branches:
-      - create-deploy
+      - master
 
 jobs:
   build:

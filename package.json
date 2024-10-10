@@ -13,6 +13,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "prepare": "husky install",
     "test:verbose": "vitest --passWithNoTests",
     "test:e2e": "NODE_ENV=test vitest --watch -c vitest.config.e2e.js",

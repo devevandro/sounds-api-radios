@@ -1,6 +1,9 @@
-import IUseCase from '../../../core/IUseCase';
-import { IGetRadiosByStateData, Result, Params } from '../data/IGetRadiosByStateData';
-import { RadioEntity } from '../entities/RadioEntity';
+import IUseCase from '../../../../core/IUseCase';
+import {
+  IGetRadiosByStateData,
+  Result,
+  Params,
+} from '../../data/IGetRadiosByStateData';
 
 export type RequestDTO = Params;
 

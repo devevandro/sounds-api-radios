@@ -1,5 +1,4 @@
 import { RadioEntity } from '../entities/RadioEntity';
-import { RegionEntity } from '../entities/RegionEntity';
 
 export type Params = {
   stateId: string;

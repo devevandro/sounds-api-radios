@@ -1,6 +1,6 @@
 {
   "name": "sounds-api-radio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "REST API to consume FM Radios",
   "author": "devevandro",
   "private": true,
@@ -32,20 +32,15 @@
     "@nestjs/schedule": "^2.2.1",
     "@nestjs/swagger": "^6.3.0",
     "@types/bcryptjs": "^2.4.2",
-    "@types/joi": "^17.2.3",
-    "@walletpass/pass-js": "^6.9.1",
     "axios": "^0.25.0",
     "bull": "^4.8.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "dayjs": "^1.10.7",
-    "googleapis": "^100.0.0",
-    "joi": "^17.4.2",
     "mongoose": "^7.2.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "swagger-ui-express": "^4.1.6",
     "ytdl-core": "^4.11.5"
   },
   "devDependencies": {

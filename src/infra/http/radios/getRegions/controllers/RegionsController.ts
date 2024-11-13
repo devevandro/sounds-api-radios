@@ -10,6 +10,7 @@ export class RegionsController {
   @Get('/')
   @ApiOperation({ summary: 'Get All Regions' })
   async getRegions() {
+    console.log('get-regions');
     const response = await this.getRegionsFactory.execute();
     return response;
   }
